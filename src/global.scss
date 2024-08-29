@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Proxima Nova";
+  src: local("ProximaNova-Regular"),
+    url("@/assets/fonts/ProximaNova-Regular.ttf") format("ttf");
+}
+
+body {
+  margin: 0;
+  font-family: "Proxima Nova", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
