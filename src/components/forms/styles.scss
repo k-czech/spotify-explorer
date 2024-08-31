@@ -1,0 +1,29 @@
+@use '@/styles/variables' as *;
+
+// Search form styles
+.search-input {
+  width: 100%;
+  max-width: 29.625rem;
+  margin-bottom: 1rem;
+  background-color: $white;
+  border: 1px solid $gray-300 !important;
+  border-radius: $border-radius * 4;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: $gray-700;
+
+  > div {
+    border-radius: $border-radius * 4;
+  }
+
+  &::placeholder {
+    color: $gray-500;
+  }
+}
+
+.search-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 1rem;
+}

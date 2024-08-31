@@ -1,0 +1,57 @@
+@use '@/styles/variables' as *;
+
+.button {
+  padding: 0.5rem 1rem;
+  border-radius: 2rem !important;
+  background-color: $primary !important;
+  border: none !important;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+  width: 100%;
+  height: 2.5rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+  a {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: $white;
+    text-decoration: none;
+  }
+
+  &:hover {
+    background-color: darken($primary, 10%) !important;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+
+  &__spotify {
+    background-color: $spotify-green !important;
+
+    &:active {
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+
+    &:active,
+    &:hover {
+      background-color: darken($spotify-green, 10%) !important;
+    }
+  }
+}
